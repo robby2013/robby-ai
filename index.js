@@ -3,13 +3,14 @@ const express = require("express");
 require("dotenv").config();
 
 const app = express();
+
 app.use(express.json());
 
 app.get("/", (req, res) => {
   res.json({
-    nama: "Robby AI",
+    name: "Robby AI",
     status: "online",
-    pesan: "Halo! Robby AI siap digunakan."
+    message: "Halo! Robby AI siap digunakan."
   });
 });
 
